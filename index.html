@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101418">
+  <title>DataPro | Análisis inteligente</title>
+  <style>
+    :root{
+      --bg:#101418;--nav:#1c1d22;--panel:#151d22;--cyan:#19b9e6;
+      --cyan2:#087fa5;--text:#f5f8fa;--muted:#b5c1c9;--line:#26343b;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;min-height:100vh;background:var(--bg);color:var(--text);
+      font-family:Inter,Segoe UI,Roboto,Arial,sans-serif}
+    .site-header{
+      height:74px;margin:4px 7px 0;padding:0 clamp(20px,3vw,52px);
+      display:flex;align-items:center;justify-content:space-between;gap:24px;
+      background:var(--nav);border:1.5px solid var(--cyan);border-radius:8px;
+      box-shadow:0 0 0 1px #19b9e622;position:relative;z-index:2
+    }
+    .brand{font-size:29px;font-weight:800;letter-spacing:-.8px;color:#f7fbff;text-decoration:none}
+    nav{display:flex;align-items:center;gap:clamp(18px,2vw,34px)}
+    nav a{font-size:15px;color:#f0f4f6;text-decoration:none;transition:color .2s}
+    nav a:hover,nav a:focus-visible{color:var(--cyan)}
+    .menu-toggle{display:none;background:none;border:1px solid var(--line);color:white;
+      border-radius:8px;padding:8px 11px;font-size:19px}
+    .hero{
+      position:relative;isolation:isolate;min-height:270px;margin:0 7px;
+      display:grid;place-items:center;overflow:hidden;
+      background:
+       radial-gradient(ellipse at 18% 25%,#087fa52b,transparent 33%),
+       radial-gradient(ellipse at 78% 65%,#00b6ca20,transparent 35%),
+       linear-gradient(115deg,#03131a 0%,#031018 48%,#02090d 100%);
+    }
+    .hero:before{
+      content:"";position:absolute;inset:0;z-index:-1;opacity:.78;
+      background-image:
+       linear-gradient(#0d8ba51b 1px,transparent 1px),
+       linear-gradient(90deg,#0d8ba51b 1px,transparent 1px);
+      background-size:42px 42px;
+      mask-image:linear-gradient(to bottom,transparent,#000 20%,#000 90%,transparent)
+    }
+    .visuals{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr);
+      gap:clamp(16px,3vw,54px);padding:0 clamp(25px,5vw,90px);opacity:.72;z-index:-1}
+    .viz-card{height:174px;margin-top:-7px;border:2px solid #087f8c66;border-radius:0 0 24px 24px;
+      background:linear-gradient(180deg,#04232c99,#031117bb);box-shadow:0 15px 35px #0008;
+      padding:18px 20px;position:relative;overflow:hidden}
+    .viz-card:after{content:"";position:absolute;left:0;right:0;bottom:0;height:35px;
+      background:linear-gradient(transparent,#061b22)}
+    .viz-label{font:700 10px monospace;color:#247b88;letter-spacing:1px}
+    .line-graph{width:100%;height:100px;margin-top:10px}
+    .bars{height:100px;display:flex;align-items:end;justify-content:center;gap:10px;padding:12px}
+    .bars i{display:block;width:17px;background:#087f8d;box-shadow:0 0 15px #0ca4b477}
+    .ring{width:94px;height:94px;border-radius:50%;border:12px solid #087f8d;
+      border-right-color:#16b6bd;border-bottom-color:#07546b;margin:12px auto}
+    .hero-content{max-width:1000px;text-align:center;padding:48px 22px 55px;
+      text-shadow:0 3px 18px #000;z-index:1}
+    .hero h1{font-family:Georgia,serif;font-size:clamp(27px,3vw,39px);margin:0 0 12px;
+      line-height:1.15;letter-spacing:-.4px}
+    .hero p{font-size:clamp(14px,1.3vw,17px);color:#e1edf1;margin:0 auto 24px;max-width:700px}
+    .cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      background:var(--cyan);color:#041219;text-decoration:none;font-weight:800;
+      padding:13px 24px;border-radius:7px;box-shadow:0 8px 24px #00a9d455;
+      transition:transform .2s,background .2s}
+    .cta:hover{background:#55d6f4;transform:translateY(-2px)}
+    .about{max-width:1080px;margin:0 auto;padding:65px 24px 72px;text-align:center}
+    .eyebrow{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--cyan);font-weight:800}
+    .about h2{font-size:clamp(24px,3vw,32px);margin:10px 0 12px}
+    .about p{max-width:720px;margin:0 auto;color:var(--muted);line-height:1.8}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px;text-align:left}
+    .feature{padding:20px;border:1px solid var(--line);border-radius:12px;background:#151d22}
+    .feature .icon{font-size:22px;color:var(--cyan)}
+    .feature h3{font-size:15px;margin:10px 0 6px}
+    .feature p{font-size:13px;line-height:1.6;margin:0;color:var(--muted)}
+    footer{border-top:1px solid var(--line);padding:20px 24px;text-align:center;color:#8e9ba3;
+      font-size:12px;line-height:1.9;background:#0c1115}
+    footer a{color:var(--cyan);text-decoration:none}
+    @media(max-width:680px){
+      .site-header{height:64px;padding:0 17px}.brand{font-size:25px}
+      .menu-toggle{display:block}nav{display:none;position:absolute;top:calc(100% + 7px);right:0;
+        left:0;padding:15px;background:#1c1d22;border:1px solid var(--line);border-radius:9px;
+        flex-direction:column;align-items:stretch;gap:0}
+      nav.open{display:flex}nav a{padding:12px 8px}
+      .hero{min-height:310px}.visuals{grid-template-columns:1fr 1fr;padding:0 12px;gap:12px}
+      .viz-card{height:145px;padding:12px}.viz-card:nth-child(3){display:none}
+      .hero-content{padding:55px 20px}.features{grid-template-columns:1fr}
+      .about{padding:48px 20px}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="DataPro, inicio">DataPro</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav id="mainNav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="acercaDeNosotros.html">Sobre nosotros</a>
+      <a href="DataStudio Pro — Análisis y Creación de Datos.html">Ir a analizar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="visuals" aria-hidden="true">
+        <div class="viz-card">
+          <div class="viz-label">ANÁLISIS DE CRECIMIENTO</div>
+          <svg class="line-graph" viewBox="0 0 300 110" preserveAspectRatio="none">
+            <path d="M5 90 L48 38 L91 62 L132 10 L174 28 L218 2 L260 25 L295 3"
+              fill="none" stroke="#13a9bd" stroke-width="3"/>
+            <path d="M5 90 L48 38 L91 62 L132 10 L174 28 L218 2 L260 25 L295 3 L295 110 L5 110Z"
+              fill="#0b879b" opacity=".12"/>
+          </svg>
+        </div>
+        <div class="viz-card">
+          <div class="viz-label">PROCESAMIENTO DE DATOS</div>
+          <div class="ring"></div>
+        </div>
+        <div class="viz-card">
+          <div class="viz-label">RENDIMIENTO</div>
+          <div class="bars"><i style="height:30%"></i><i style="height:48%"></i><i style="height:75%"></i><i style="height:58%"></i><i style="height:90%"></i><i style="height:68%"></i></div>
+        </div>
+      </div>
+      <div class="hero-content">
+        <h1 id="hero-title">¡Empieza a emprender!</h1>
+        <p>Analiza tu desarrollo en tu emprendimiento con DataPro, el mejor analizador de datos.</p>
+        <a class="cta" id="empezar" href="centroAnalista.html">Empecemos <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="about" id="nosotros">
+      <div class="eyebrow">Conoce DataPro</div>
+      <h2>Convierte tus datos en decisiones</h2>
+      <p>DataPro es una propuesta para ayudarte a comprender el rendimiento de tu emprendimiento mediante el análisis y la visualización de información. Organiza tus datos, identifica tendencias y descubre nuevas oportunidades de crecimiento.</p>
+      <div class="features">
+        <article class="feature"><div class="icon">▥</div><h3>Visualiza tus resultados</h3><p>Representa tus datos de forma clara para entender mejor su comportamiento.</p></article>
+        <article class="feature"><div class="icon">↗</div><h3>Identifica oportunidades</h3><p>Compara períodos y categorías para reconocer avances y áreas de mejora.</p></article>
+        <article class="feature"><div class="icon">◈</div><h3>Decide con información</h3><p>Utiliza indicadores y reportes como apoyo para planificar tu emprendimiento.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>Todos los derechos reservados 2026 ©</div>
+    <div>Desarrollado en la institución <a href="#nosotros">Villa de los Niños</div>
+  </footer>
+  <script>
+    const toggle=document.getElementById('menuToggle');
+    const nav=document.getElementById('mainNav');
+    toggle.addEventListener('click',()=>{
+      const opened=nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded',String(opened));
+      toggle.setAttribute('aria-label',opened?'Cerrar menú':'Abrir menú');
+    });
+    nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{
+      nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');
+    }));
+  </script>
+</body>
+</html>

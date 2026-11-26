@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa de los Niños Guatemala | Historia y Legado (2000)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display, Inter y Great Vibes para la firma caligráfica -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        if (typeof tailwind !== 'undefined') {
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                            sans: ['Inter', 'system-ui', 'sans-serif'],
+                            signature: ['"Great Vibes"', 'cursive'],
+                        },
+                        colors: {
+                            navy: {
+                                800: '#16334B',
+                                900: '#0F223D',
+                                950: '#091724',
+                            },
+                            gold: {
+                                100: '#FBF5E3',
+                                200: '#F3E2B3',
+                                300: '#E5C158',
+                                400: '#D4AF37',
+                                500: '#C89D28',
+                                600: '#946E13',
+                                700: '#70510B',
+                            },
+                            ivory: {
+                                50: '#FDFBF5',
+                                100: '#FAF8F5',
+                                200: '#F2EDE4',
+                            }
+                        },
+                        boxShadow: {
+                            'gold': '0 10px 30px -5px rgba(197, 155, 39, 0.25)',
+                            'gold-lg': '0 20px 45px -10px rgba(212, 175, 55, 0.35)',
+                        }
+                    }
+                }
+            };
+        }
+    </script>
+    <style>
+        /* Estilos personalizados mínimos para efectos metálicos, afiche oficial y animaciones */
+¿.gold-text-gradient {
+  /* Fondo de degradado dorado */
+  background: linear-gradient(135deg, #F3E2B3 0%, #D4AF37 45%, #946E13 100%);
+  
+  /* Propiedad estándar y prefijada para recortar el fondo al texto */
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  /* Hace que el texto sea transparente para que se luzca el degradado de fondo */
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+        .gold-banner-bg {
+            background: linear-gradient(180deg, #F7E5A8 0%, #DFB548 52%, #BA8D1F 100%);
+        }
+        .gold-frame {
+            background: linear-gradient(135deg, #F8E8B0 0%, #C89D28 50%, #F3DC92 100%);
+            padding: 6px;
+            box-shadow: 0 12px 28px rgba(15, 34, 61, 0.22);
+        }
+        .ribbon-navy {
+            background: linear-gradient(90deg, #091724 0%, #0F223D 60%, #18355E 100%);
+            clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%);
+        }
+        .emblem-glow {
+            filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.45)) drop-shadow(0 0 25px rgba(229, 193, 88, 0.25));
+            transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .emblem-glow:hover {
+            transform: scale(1.03);
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: all 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .mayan-pattern {
+            background-color: #0F223D;
+            background-image:
+                linear-gradient(45deg, #C89D28 25%, transparent 25%),
+                linear-gradient(-45deg, #C89D28 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, #C89D28 75%),
+                linear-gradient(-45deg, transparent 75%, #C89D28 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0;
+        }
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            #poster-sheet, #poster-sheet * {
+                visibility: visible;
+            }
+            #poster-sheet {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                max-width: 100% !important;
+                margin: 0 !important;
+                box-shadow: none !important;
+                border: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-ivory-100 text-slate-800 font-sans antialiased selection:bg-gold-300 selection:text-navy-900 overflow-x-hidden">
+
+    <!-- Plantilla oculta del Emblema Oficial SVG de Villa de los Niños Guatemala 2000 (Reproducción fiel de image_a8d563.png) -->
+    <template id="official-emblem-template">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" class="w-full h-full select-none" role="img" aria-label="Emblema Oficial Villa de los Niños Guatemala 2000">
+            <defs>
+                <!-- Gradiente radial dorado metálico luminoso para el fondo del sello -->
+                <radialGradient id="goldMedalBg" cx="38%" cy="32%" r="68%" fx="35%" fy="30%">
+                    <stop offset="0%" stop-color="#FFF5C3"/>
+                    <stop offset="32%" stop-color="#F2D06B"/>
+                    <stop offset="68%" stop-color="#D9AC3E"/>
+                    <stop offset="92%" stop-color="#B98A22"/>
+                    <stop offset="100%" stop-color="#9A6F14"/>
+                </radialGradient>
+
+                <!-- Gradiente lineal para los aros y bordes metálicos -->
+                <linearGradient id="goldRimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#8B6314"/>
+                    <stop offset="25%" stop-color="#F7DF8B"/>
+                    <stop offset="50%" stop-color="#7D560D"/>
+                    <stop offset="75%" stop-color="#E8C252"/>
+                    <stop offset="100%" stop-color="#6E4A09"/>
+                </linearGradient>
+
+                <!-- Gradiente para el monograma y textos grabados en bronce/oro oscuro -->
+                <linearGradient id="goldEngrave" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#8C6214"/>
+                    <stop offset="50%" stop-color="#9E7119"/>
+                    <stop offset="100%" stop-color="#7A530D"/>
+                </linearGradient>
+
+                <!-- Trayectorias circulares para los textos curvos superior e inferior -->
+                <!-- Arco superior: de izquierda a derecha por arriba -->
+                <path id="topArcPath" d="M 55,200 A 145,145 0 1,1 345,200" fill="none"/>
+                <!-- Arco inferior: de izquierda a derecha por abajo (radio mayor para alinear línea base externa) -->
+                <path id="bottomArcPath" d="M 41,200 A 159,159 0 0,0 359,200" fill="none"/>
+            </defs>
+
+            <!-- Base circular exterior -->
+            <circle cx="200" cy="200" r="194" fill="url(#goldMedalBg)" stroke="url(#goldRimGrad)" stroke-width="5"/>
+            
+            <!-- Segundo anillo fino exterior (doble borde característico) -->
+            <circle cx="200" cy="200" r="185" fill="none" stroke="#8C6214" stroke-width="2.5"/>
+
+            <!-- Anillo interior doble que enmarca el monograma central -->
+            <circle cx="200" cy="200" r="126" fill="none" stroke="#8C6214" stroke-width="2.2"/>
+            <circle cx="200" cy="200" r="121" fill="none" stroke="#8C6214" stroke-width="1.4"/>
+
+            <!-- Texto Superior Curvo: VILLA DE LOS NIÑOS -->
+            <text fill="url(#goldEngrave)" font-family="'Inter', 'Arial', sans-serif" font-weight="700" font-size="29.5" letter-spacing="2.2">
+                <textPath href="#topArcPath" startOffset="50%" text-anchor="middle">VILLA DE LOS NIÑOS</textPath>
+            </text>
+
+            <!-- Texto Inferior Curvo: GUATEMALA 2000 -->
+            <text fill="url(#goldEngrave)" font-family="'Inter', 'Arial', sans-serif" font-weight="700" font-size="28" letter-spacing="2.5">
+                <textPath href="#bottomArcPath" startOffset="50%" text-anchor="middle">GUATEMALA 2000</textPath>
+            </text>
+
+            <!-- Estrellas Laterales -->
+            <polygon points="44,188 48,197 58,197 50,203 53,213 44,207 35,213 38,203 30,197 40,197" fill="url(#goldEngrave)"/>
+            <polygon points="356,188 360,197 370,197 362,203 365,213 356,207 347,213 350,203 342,197 352,197" fill="url(#goldEngrave)"/>
+
+            <!-- Monograma Central -->
+            <g fill="url(#goldEngrave)">
+                <circle cx="200" cy="134" r="28"/>
+                <path d="M 126 170 H 274 V 202 C 274 245 241 278 200 278 C 159 278 126 245 126 202 V 192 H 154 V 202 C 154 229 174 250 200 250 C 226 250 246 229 246 202 V 195 H 126 Z"/>
+                <circle cx="200" cy="219" r="22"/>
+            </g>
+        </svg>
+    </template>
+
+    <!-- Barra de Navegación Fija con Selector de Vistas y Carga de Fotos -->
+    <header class="sticky top-0 z-50 bg-navy-900/95 backdrop-blur-md border-b border-gold-400/20 text-white transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 gap-3">
+                <!-- Marca y Logo SVG -->
+                <a href="#inicio" class="flex items-center gap-3 group focus:outline-none flex-shrink-0">
+                    <div class="w-11 h-11 sm:w-13 sm:h-13 flex-shrink-0 transition-transform duration-300 group-hover:rotate-6" data-emblem-slot></div>
+                    <div>
+                        <span class="block font-serif text-base sm:text-lg font-bold tracking-wide text-gold-200 leading-tight">Villa de los Niños</span>
+                        <span class="block text-[11px] uppercase tracking-[0.18em] text-gold-400/90 font-medium">Guatemala • Desde 2000</span>
+                    </div>
+                </a>
+
+                <!-- Selector de Vista (Ambas / Web Institucional / Hoja Informativa) -->
+                <div class="hidden xl:flex items-center bg-navy-950/90 p-1 rounded-full border border-gold-400/25 text-xs font-semibold">
+                    <button type="button" data-view-mode="all" class="view-mode-btn active px-3.5 py-1.5 rounded-full bg-gold-400 text-navy-950 transition-all">
+                        Vista Unificada
+                    </button>
+                    <button type="button" data-view-mode="web" class="view-mode-btn px-3.5 py-1.5 rounded-full text-slate-300 hover:text-gold-300 transition-all">
+                        Web Institucional
+                    </button>
+                    <button type="button" data-view-mode="poster" class="view-mode-btn px-3.5 py-1.5 rounded-full text-slate-300 hover:text-gold-300 transition-all">
+                        Hoja Oficial
+                    </button>
+                </div>
+
+                <!-- Menú Desktop -->
+                <nav class="hidden lg:flex items-center gap-5 text-sm font-medium text-slate-200">
+                    <a href="#hoja-informativa" class="text-gold-300 hover:text-gold-200 transition-colors py-2 flex items-center gap-1.5">
+                        <i data-lucide="file-text" class="w-4 h-4"></i>
+                        <span>Afiche Oficial</span>
+                    </a>
+                    <a href="#fundador" class="hover:text-gold-300 transition-colors py-2">El Fundador</a>
+                    <a href="#historia" class="hover:text-gold-300 transition-colors py-2">Línea del Tiempo</a>
+                    <a href="index.html" class="hover:text-gold-300 transition-colors py-2">Ir a inicio</a>
+                    <label class="cursor-pointer px-3.5 py-2 rounded-full bg-navy-800 hover:bg-navy-950 border border-gold-400/40 text-gold-200 text-xs font-semibold transition-all flex items-center gap-1.5" title="Seleccionar campus-villa.jpg, banda-gala.jpg y equipo-baloncesto.jpg">
+                        <i data-lucide="image-plus" class="w-4 h-4 text-gold-400"></i>
+                        <span>Cargar 3 Fotos</span>
+                        <input type="file" id="global-photo-uploader" accept="image/*" multiple class="hidden">
+                    </label>
+                </nav>
+
+                <!-- Botón Menú Móvil -->
+                <button id="mobile-menu-btn" type="button" class="lg:hidden p-2.5 rounded-xl text-gold-300 hover:bg-navy-800 focus:outline-none" aria-label="Abrir menú">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menú Desplegable Móvil -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-navy-950 border-b border-gold-400/20 px-4 pt-3 pb-6 space-y-2.5">
+            <div class="grid grid-cols-3 gap-1.5 bg-navy-900 p-1 rounded-xl border border-gold-400/20 text-xs font-semibold text-center">
+                <button type="button" data-view-mode="all" class="view-mode-btn active py-2 rounded-lg bg-gold-400 text-navy-950">Unificada</button>
+                <button type="button" data-view-mode="web" class="view-mode-btn py-2 rounded-lg text-slate-300">Web</button>
+                <button type="button" data-view-mode="poster" class="view-mode-btn py-2 rounded-lg text-slate-300">Hoja Oficial</button>
+            </div>
+            <a href="#hoja-informativa" class="block px-4 py-2.5 rounded-xl text-gold-300 hover:bg-navy-800 font-semibold">Hoja Informativa / Afiche Oficial</a>
+            <a href="#fundador" class="block px-4 py-2.5 rounded-xl text-slate-200 hover:bg-navy-800 hover:text-gold-300 font-medium">El Fundador (Padre Al)</a>
+            <a href="#historia" class="block px-4 py-2.5 rounded-xl text-slate-200 hover:bg-navy-800 hover:text-gold-300 font-medium">Línea del Tiempo (1930–Hoy)</a>
+            <a href="#guatemala" class="block px-4 py-2.5 rounded-xl text-slate-200 hover:bg-navy-800 hover:text-gold-300 font-medium">Historia en Guatemala</a>
+            <a href="#modelo" class="block px-4 py-2.5 rounded-xl text-slate-200 hover:bg-navy-800 hover:text-gold-300 font-medium">Modelo Educativo Integral</a>
+            <label class="cursor-pointer block px-4 py-3 rounded-xl bg-gold-400 text-navy-950 font-bold text-center mt-2">
+                Cargar mis 3 fotos locales
+                <input type="file" id="mobile-photo-uploader" accept="image/*" multiple class="hidden">
+            </label>
+        </div>
+    </header>
+
+    <!-- CONTENEDOR DE LA WEB INSTITUCIONAL COMPLETA -->
+    <main id="institutional-web-view">
+    <!-- Sección Hero Conmemorativa -->
+    <section id="inicio" class="relative bg-navy-900 text-white overflow-hidden py-16 sm:py-24 lg:py-28">
+        <!-- Patrón decorativo de fondo -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-gold-400 blur-3xl"></div>
+            <div class="absolute -bottom-32 -left-24 w-[30rem] h-[30rem] rounded-full bg-gold-500 blur-3xl"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Columna de Texto -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-navy-800 border border-gold-400/30 text-gold-300 text-xs sm:text-sm font-medium tracking-wide">
+                        <i data-lucide="award" class="w-4 h-4 text-gold-400"></i>
+                        <span>Obra de las Hermanas de María • Fundada en el Año 2000</span>
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
+                        Transformando vidas a través de la <span class="gold-text-gradient">educación gratuita</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Desde su inauguración en el año <strong>2000</strong> en Guatemala, <strong>Villa de los Niños</strong> continúa el carisma del <strong>Venerable Padre Aloysius Schwartz</strong>, brindando hogar, educación secundaria y formación técnica de excelencia a jóvenes de familias de escasos recursos de los 22 departamentos del país.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#hoja-informativa" class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-gold-400 hover:bg-gold-300 text-navy-950 font-semibold text-sm sm:text-base transition-all shadow-gold flex items-center justify-center gap-2">
+                            <i data-lucide="file-badge" class="w-4 h-4"></i>
+                            <span>Ver Hoja Informativa Oficial</span>
+                        </a>
+                        <a href="#historia" class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-navy-800/80 hover:bg-navy-800 border border-gold-400/30 text-gold-200 font-medium text-sm sm:text-base transition-all flex items-center justify-center gap-2">
+                            <span>Explorar Línea del Tiempo</span>
+                            <i data-lucide="arrow-down-right" class="w-4 h-4 text-gold-400"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna del Emblema Oficial en Gran Formato -->
+                <div class="lg:col-span-5 flex flex-col items-center justify-center">
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 emblem-glow">
+                        <!-- Halo sutil detrás del sello -->
+                        <div class="absolute inset-4 rounded-full bg-gold-400/20 blur-2xl -z-10"></div>
+                        <div class="w-full h-full" data-emblem-slot></div>
+                    </div>
+                    <p class="mt-5 text-xs uppercase tracking-[0.25em] text-gold-300/80 font-medium text-center">
+                        Emblema Institucional • Guatemala 2000
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Cifras Verídicas de Impacto -->
+    <section id="impacto" class="relative -mt-8 z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-3xl shadow-xl border border-gold-200/80 p-6 sm:p-10">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 text-center divide-y sm:divide-y-0 sm:divide-x divide-slate-100">
+                <div class="pt-4 sm:pt-0 px-2">
+                    <span class="block font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-900 counter" data-target="2000">2000</span>
+                    <span class="mt-2 block text-xs sm:text-sm font-semibold uppercase tracking-wider text-gold-600">Año de Fundación</span>
+                    <span class="mt-1 block text-xs text-slate-500">En Mixco, Guatemala</span>
+                </div>
+                <div class="pt-4 sm:pt-0 px-2">
+                    <span class="block font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-900"><span class="counter" data-target="100">100</span>%</span>
+                    <span class="mt-2 block text-xs sm:text-sm font-semibold uppercase tracking-wider text-gold-600">Beca Integral Gratuita</span>
+                    <span class="mt-1 block text-xs text-slate-500">Estudios, vivienda y salud</span>
+                </div>
+                <div class="pt-4 sm:pt-0 px-2">
+                    <span class="block font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-900 counter" data-target="22">22</span>
+                    <span class="mt-2 block text-xs sm:text-sm font-semibold uppercase tracking-wider text-gold-600">Departamentos</span>
+                    <span class="mt-1 block text-xs text-slate-500">Alcance nacional rural</span>
+                </div>
+                <div class="pt-4 sm:pt-0 px-2">
+                    <span class="block font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-900 counter" data-target="7">7</span>
+                    <span class="mt-2 block text-xs sm:text-sm font-semibold uppercase tracking-wider text-gold-600">Países en el Mundo</span>
+                    <span class="mt-1 block text-xs text-slate-500">Red World Villages</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección El Fundador: Venerable Padre Aloysius Schwartz -->
+    <section id="fundador" class="py-20 sm:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Tarjeta Biográfica Destacada -->
+            <div class="lg:col-span-5">
+                <div class="bg-navy-900 text-white rounded-3xl p-8 sm:p-10 shadow-2xl border border-gold-400/30 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-gold-400/10 rounded-bl-full"></div>
+                    <div class="w-14 h-14 rounded-2xl bg-gold-400/20 border border-gold-400/40 flex items-center justify-center text-gold-300 mb-6">
+                        <i data-lucide="heart-handshake" class="w-7 h-7"></i>
+                    </div>
+                    <span class="text-xs uppercase tracking-[0.2em] text-gold-400 font-semibold">Inspiración y Carisma</span>
+                    <h3 class="font-serif text-2xl sm:text-3xl font-bold mt-2 text-white">Venerable Padre Aloysius Schwartz</h3>
+                    <p class="text-gold-200/90 text-sm mt-1 font-medium">"Padre Al" (1930 – 1992)</p>
+
+                    <div class="mt-6 space-y-4 text-sm text-slate-300 border-t border-white/10 pt-6">
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Nacimiento:</span>
+                            <span class="font-medium text-white">18 de septiembre de 1930, Washington D.C.</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Ordenación Sacerdotal:</span>
+                            <span class="font-medium text-white">29 de junio de 1957</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Congregación fundada:</span>
+                            <span class="font-medium text-white">Hermanas de María (Busan, 1964)</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Reconocimiento:</span>
+                            <span class="font-medium text-gold-300">Declarado Venerable (22 enero 2015)</span>
+                        </div>
+                    </div>
+
+                    <blockquote class="mt-6 p-4 rounded-2xl bg-navy-950/70 border-l-4 border-gold-400 italic text-sm text-gold-100 leading-relaxed">
+                        "La educación de calidad es el medio más eficaz y duradero para romper las cadenas de la pobreza."
+                    </blockquote>
+                </div>
+            </div>
+
+            <!-- Narrativa Histórica del Origen -->
+            <div class="lg:col-span-7 space-y-6">
+                <span class="text-xs font-bold uppercase tracking-[0.2em] text-gold-600">Raíces de la Misión</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-900 leading-tight">
+                    De las calles de Corea del Sur a los hogares de Guatemala
+                </h2>
+                <p class="text-slate-600 leading-relaxed text-base sm:text-lg">
+                    La historia de <strong>Villa de los Niños</strong> comienza con la vocación misionera del sacerdote estadounidense <strong>Aloysius Schwartz</strong>, conocido cariñosamente como el <em>Padre Al</em>. Tras ser ordenado en 1957, pidió ser enviado a Corea del Sur, país devastado por la guerra donde miles de niños huérfanos sobrevivían en condiciones de extrema miseria.
+                </p>
+                <p class="text-slate-600 leading-relaxed text-base">
+                    El <strong>15 de agosto de 1964</strong>, en la ciudad portuaria de Busan, fundó la congregación religiosa de las <strong>Hermanas de María</strong>, dedicada íntegramente a servir a los más pobres entre los pobres. Junto a ellas creó las primeras <em>Villas de los Niños y de las Niñas</em> (Boys Towns y Girls Towns), un modelo revolucionario que sustituía los orfanatos tradicionales por verdaderos hogares familiares y centros educativos de excelencia técnica.
+                </p>
+                <p class="text-slate-600 leading-relaxed text-base">
+                    A pesar de padecer esclerosis lateral amiotrófica (ELA) en sus últimos años de vida hasta su fallecimiento en Manila el <strong>16 de marzo de 1992</strong>, el Padre Al impulsó la expansión internacional de la obra hacia Filipinas y México, sentando las bases espirituales y organizativas para su posterior llegada a Centroamérica y Guatemala. El <strong>22 de enero de 2015</strong>, el Papa Francisco reconoció sus virtudes heroicas declarándolo <strong>Venerable</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Llegada y Fundación en Guatemala (1998 - 2000) -->
+    <section id="guatemala" class="py-20 bg-ivory-200/70 border-y border-gold-200/60 reveal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-14">
+                <span class="text-xs font-bold uppercase tracking-[0.2em] text-gold-600">Historia Nacional</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-900 mt-2">
+                    Fundación de Villa de los Niños Guatemala (Año 2000)
+                </h2>
+                <p class="text-slate-600 mt-4 text-base sm:text-lg">
+                    Cómo nació este faro de esperanza educativa en el corazón de Guatemala para la juventud de las áreas más vulnerables del país.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Tarjeta 1 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm border border-gold-200/70 hover:shadow-gold transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-navy-900 text-gold-300 flex items-center justify-center font-serif font-bold text-xl mb-5">
+                        1
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy-900 mb-3">La Llegada de las Hermanas (1998)</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Tras la firma de los Acuerdos de Paz en Guatemala (1996) y ante la urgente necesidad de acceso a educación secundaria y técnica en las zonas rurales, las <strong>Hermanas de María</strong> arribaron a Guatemala en <strong>1998</strong> para iniciar los estudios sociales y la selección de los primeros jóvenes beneficiarios.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm border border-gold-200/70 hover:shadow-gold transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-gold-400 text-navy-950 flex items-center justify-center font-serif font-bold text-xl mb-5">
+                        2
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy-900 mb-3">Inauguración Oficial (Año 2000)</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        En el año <strong>2000</strong> —fecha inmortalizada en el emblema dorado oficial— abrió formalmente sus puertas <strong>Villa de los Niños Guatemala</strong>, ubicada en la Aldea El Aguacate, Zona 10 de Mixco (carretera hacia San Juan Sacatepéquez), recibiendo a su primera generación de estudiantes internos provenientes del interior de la República.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm border border-gold-200/70 hover:shadow-gold transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-navy-900 text-gold-300 flex items-center justify-center font-serif font-bold text-xl mb-5">
+                        3
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy-900 mb-3">Sostenimiento Solidario</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Al igual que sus sedes hermanas respaldadas por <em>World Villages for Children</em>, Villa de los Niños Guatemala opera sin cobrar un solo centavo a las familias, sosteniéndose gracias a la providencia y a la generosidad de bienhechores nacionales e internacionales comprometidos con la educación.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Galería: Vida en Villa de los Niños (Las 3 fotografías integradas) -->
+    <section id="galeria" class="py-20 sm:py-24 bg-navy-950 text-white border-b border-gold-400/20 reveal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-6">
+                <div class="max-w-2xl">
+                    <span class="text-xs font-bold uppercase tracking-[0.2em] text-gold-400">Comunidad, Civismo y Deporte</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-2">
+                        Vida en Villa de los Niños Guatemala
+                    </h2>
+                    <p class="text-slate-300 mt-3 text-base leading-relaxed">
+                        La formación integral abarca la convivencia fraterna en el campus, la disciplina artística de la Banda de Gala y el espíritu deportivo bajo el amparo de la Virgen de los Pobres.
+                    </p>
+                </div>
+
+                <!-- Selector interactivo para cargar las 3 fotografías desde el dispositivo del usuario -->
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+                    <label for="photoUploader" class="cursor-pointer inline-flex items-center gap-2.5 px-5 py-3 rounded-full bg-gold-400 hover:bg-gold-300 text-navy-950 font-semibold text-xs sm:text-sm transition-all shadow-gold">
+                        <i data-lucide="upload" class="w-4 h-4"></i>
+                        <span>Cargar mis 3 fotos locales</span>
+                        <input type="file" id="photoUploader" accept="image/*" multiple class="hidden" />
+                    </label>
+                </div>
+            </div>
+
+            <!-- Cuadrícula de las 3 Fotografías -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Fotografía 1: Campus y Comunidad -->
+                <article class="bg-navy-900 rounded-3xl overflow-hidden border border-gold-400/25 hover:border-gold-400/60 transition-all shadow-xl flex flex-col group">
+                    <div class="aspect-[4/5] bg-navy-800 relative overflow-hidden">
+                        <img id="img-campus" src="campus-villa.jpg" alt="Estudiantes en el patio central de Villa de los Niños Guatemala" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 cursor-pointer" onclick="openLightbox(this)" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                        <div class="hidden w-full h-full flex-col items-center justify-center p-6 text-center bg-gradient-to-b from-navy-800 to-navy-900 text-slate-300 border-b border-gold-400/15">
+                            <div class="w-12 h-12 rounded-2xl bg-gold-400/15 text-gold-300 flex items-center justify-center mb-3">
+                                <i data-lucide="image" class="w-6 h-6"></i>
+                            </div>
+                            <span class="text-gold-300 font-bold text-sm mb-1.5">Foto 1: campus-villa.jpg</span>
+                            <p class="text-xs text-slate-400 leading-relaxed">
+                                Guarda tu primera foto junto a este archivo HTML como <code class="text-gold-200 bg-navy-950 px-1.5 py-0.5 rounded">campus-villa.jpg</code> o usa el botón <strong class="text-white">"Cargar mis 3 fotos locales"</strong>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-gold-400">Comunidad Estudiantil</span>
+                            <h3 class="font-serif text-xl font-bold text-white mt-1.5">Convivencia y Formación Integral</h3>
+                            <p class="text-sm text-slate-300 mt-2.5 leading-relaxed">
+                                Jóvenes procedentes de los 22 departamentos del país conviven en un ambiente seguro, ordenado y fraterno dentro de las instalaciones de Mixco.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Fotografía 2: Banda de Gala -->
+                <article class="bg-navy-900 rounded-3xl overflow-hidden border border-gold-400/25 hover:border-gold-400/60 transition-all shadow-xl flex flex-col group">
+                    <div class="aspect-[4/5] bg-navy-800 relative overflow-hidden">
+                        <img id="img-banda" src="banda-gala.jpg" alt="Banda de Gala de Villa de los Niños marchando" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 cursor-pointer" onclick="openLightbox(this)" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                        <div class="hidden w-full h-full flex-col items-center justify-center p-6 text-center bg-gradient-to-b from-navy-800 to-navy-900 text-slate-300 border-b border-gold-400/15">
+                            <div class="w-12 h-12 rounded-2xl bg-gold-400/15 text-gold-300 flex items-center justify-center mb-3">
+                                <i data-lucide="music" class="w-6 h-6"></i>
+                            </div>
+                            <span class="text-gold-300 font-bold text-sm mb-1.5">Foto 2: banda-gala.jpg</span>
+                            <p class="text-xs text-slate-400 leading-relaxed">
+                                Guarda tu segunda foto junto a este archivo HTML como <code class="text-gold-200 bg-navy-950 px-1.5 py-0.5 rounded">banda-gala.jpg</code> o usa el botón <strong class="text-white">"Cargar mis 3 fotos locales"</strong>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-gold-400">Civismo y Arte</span>
+                            <h3 class="font-serif text-xl font-bold text-white mt-1.5">Tradición y Orgullo: Banda de Gala</h3>
+                            <p class="text-sm text-slate-300 mt-2.5 leading-relaxed">
+                                Reconocida a nivel nacional por su marcialidad, disciplina y excelencia musical en desfiles cívicos, actos protocolarios y celebraciones patrias.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Fotografía 3: Equipo de Baloncesto y Gruta de la Virgen -->
+                <article class="bg-navy-900 rounded-3xl overflow-hidden border border-gold-400/25 hover:border-gold-400/60 transition-all shadow-xl flex flex-col group">
+                    <div class="aspect-[4/5] bg-navy-800 relative overflow-hidden">
+                        <img id="img-deporte" src="equipo-baloncesto.jpg" alt="Equipo de baloncesto frente a la imagen de la Virgen en Villa de los Niños" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 cursor-pointer" onclick="openLightbox(this)" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                        <div class="hidden w-full h-full flex-col items-center justify-center p-6 text-center bg-gradient-to-b from-navy-800 to-navy-900 text-slate-300 border-b border-gold-400/15">
+                            <div class="w-12 h-12 rounded-2xl bg-gold-400/15 text-gold-300 flex items-center justify-center mb-3">
+                                <i data-lucide="trophy" class="w-6 h-6"></i>
+                            </div>
+                            <span class="text-gold-300 font-bold text-sm mb-1.5">Foto 3: equipo-baloncesto.jpg</span>
+                            <p class="text-xs text-slate-400 leading-relaxed">
+                                Guarda tu tercera foto junto a este archivo HTML como <code class="text-gold-200 bg-navy-950 px-1.5 py-0.5 rounded">equipo-baloncesto.jpg</code> o usa el botón <strong class="text-white">"Cargar mis 3 fotos locales"</strong>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-gold-400">Deporte, Valores y Fe</span>
+                            <h3 class="font-serif text-xl font-bold text-white mt-1.5">Trabajo en Equipo y Espiritualidad</h3>
+                            <p class="text-sm text-slate-300 mt-2.5 leading-relaxed">
+                                El deporte fomenta la salud física, el compañerismo y la superación personal bajo la protección maternal de la Virgen de los Pobres.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Línea del Tiempo Interactiva (1930 - Actualidad) -->
+    <section id="historia" class="py-20 sm:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-xs font-bold uppercase tracking-[0.2em] text-gold-600">Cronología Histórica</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-900 mt-2">
+                Hitos que Forjaron Nuestra Historia
+            </h2>
+            <p class="text-slate-600 mt-3 text-base">
+                Selecciona una etapa para explorar los acontecimientos clave desde el nacimiento del fundador hasta el presente de Villa de los Niños Guatemala.
+            </p>
+
+            <!-- Filtros interactivos de etapa -->
+            <div class="flex flex-wrap justify-center gap-2.5 mt-8" id="timeline-filters">
+                <button type="button" data-filter="all" class="filter-btn active px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold bg-navy-900 text-gold-300 shadow-sm transition-all">
+                    Toda la Historia
+                </button>
+                <button type="button" data-filter="origen" class="filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold bg-white text-slate-700 border border-slate-200 hover:border-gold-400 transition-all">
+                    Orígenes (1930–1992)
+                </button>
+                <button type="button" data-filter="guatemala" class="filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold bg-white text-slate-700 border border-slate-200 hover:border-gold-400 transition-all">
+                    Guatemala (1998–2005)
+                </button>
+                <button type="button" data-filter="legado" class="filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold bg-white text-slate-700 border border-slate-200 hover:border-gold-400 transition-all">
+                    Legado Actual (2015–Hoy)
+                </button>
+            </div>
+        </div>
+
+        <!-- Contenedor Vertical de Línea del Tiempo -->
+        <div class="relative max-w-4xl mx-auto">
+            <!-- Línea central vertical -->
+            <div class="absolute left-6 sm:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-gold-300 via-gold-500 to-navy-900 transform sm:-translate-x-1/2"></div>
+
+            <div class="space-y-10" id="timeline-items">
+                <!-- Hito 1: 1930 -->
+                <div class="timeline-card relative flex flex-col sm:flex-row items-start sm:items-center justify-between" data-category="origen">
+                    <div class="sm:w-5/12 sm:text-right pl-16 sm:pl-0 sm:pr-10">
+                        <span class="inline-block px-3 py-1 rounded-full bg-gold-100 text-gold-700 font-bold text-xs mb-2">18 Septiembre 1930</span>
+                        <h3 class="font-serif text-xl font-bold text-navy-900">Nacimiento del Padre Aloysius Schwartz</h3>
+                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                            Nace en Washington D.C., Estados Unidos. Desde joven sintió el llamado a servir a los más necesitados como sacerdote diocesano misionero.
+                        </p>
+                    </div>
+                    <div class="absolute left-6 sm:left-1/2 w-5 h-5 rounded-full bg-gold-400 border-4 border-white shadow-md transform -translate-x-1/2"></div>
+                    <div class="hidden sm:block sm:w-5/12"></div>
+                </div>
+
+                <!-- Hito 2: 1964 -->
+                <div class="timeline-card relative flex flex-col sm:flex-row items-start sm:items-center justify-between" data-category="origen">
+                    <div class="hidden sm:block sm:w-5/12"></div>
+                    <div class="absolute left-6 sm:left-1/2 w-5 h-5 rounded-full bg-navy-900 border-4 border-gold-300 shadow-md transform -translate-x-1/2"></div>
+                    <div class="sm:w-5/12 pl-16 sm:pl-10">
+                        <span class="inline-block px-3 py-1 rounded-full bg-navy-900 text-gold-300 font-bold text-xs mb-2">15 Agosto 1964</span>
+                        <h3 class="font-serif text-xl font-bold text-navy-900">Fundación de las Hermanas de María</h3>
+                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                            En Busan, Corea del Sur, el Padre Al funda la Congregación de las Hermanas de María e inicia la primera Villa de los Niños para rescatar a menores huérfanos y en pobreza extrema.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Hito 3: 1992 -->
+                <div class="timeline-card relative flex flex-col sm:flex-row items-start sm:items-center justify-between" data-category="origen">
+                    <div class="sm:w-5/12 sm:text-right pl-16 sm:pl-0 sm:pr-10">
+                        <span class="inline-block px-3 py-1 rounded-full bg-gold-100 text-gold-700 font-bold text-xs mb-2">16 Marzo 1992</span>
+                        <h3 class="font-serif text-xl font-bold text-navy-900">Legado Eterno del Fundador</h3>
+                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                            Fallece en Manila, Filipinas, tras haber expandido las Villas a Corea, Filipinas y México, dejando a las Hermanas de María la misión de llevar la obra a Centroamérica.
+                        </p>
+                    </div>
+                    <div class="absolute left-6 sm:left-1/2 w-5 h-5 rounded-full bg-gold-400 border-4 border-white shadow-md transform -translate-x-1/2"></div>
+                    <div class="hidden sm:block sm:w-5/12"></div>
+                </div>
+
+                <!-- Hito 4: 1998 -->
+                <div class="timeline-card relative flex flex-col sm:flex-row items-start sm:items-center justify-between" data-category="guatemala">
+                    <div class="hidden sm:block sm:w-5/12"></div>
+                    <div class="absolute left-6 sm:left-1/2 w-5 h-5 rounded-full bg-navy-900 border-4 border-gold-300 shadow-md transform -translate-x-1/2"></div>
+                    <div class="sm:w-5/12 pl-16 sm:pl-10">
+                        <span class="inline-block px-3 py-1 rounded-full bg-navy-900 text-gold-300 font-bold text-xs mb-2">Año 1998</span>
+                        <h3 class="font-serif text-xl font-bold text-navy-900">Arribo de las Hermanas a Guatemala</h3>
+                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                            Las Hermanas de María llegan a tierra guatemalteca y comienzan las visitas domiciliarias en aldeas remotas para identificar a jóvenes con deseos de superación y escasos recursos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Hito 5: 2000 (Destacado) -->
+                <div class="timeline-card relative flex flex-col sm:flex-row items-start sm:items-center justify-between" data-category="guatemala">
+                    <div class="sm:w-5/12 sm:text-right pl-16 sm:pl-0 sm:pr-10">
+                        <div class="bg-navy-900 text-white p-6 rounded-2xl border border-gold-400/50 shadow-gold">
+                            <span class="inline-block px-3 py-1 rounded-full bg-gold-400 text-navy-950 font-bold text-xs mb-2">Año 2000 • Hito Central</span>
+                            <h3 class="font-serif text-xl font-bold text-gold-300">Fundación de Villa de los Niños Guatemala</h3>
+                            <p class="text-slate-200 text-sm mt-2 leading-relaxed">
+                                Se inaugura oficialmente la Villa de los Niños en Guatemala (Mixco), brindando internado, alimentación, atención médica, educación secundaria y talleres técnicos de primer nivel de forma 100% gratuita.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="absolute left-6 sm:left-1/2 w-7 h-7 rounded-full bg-gold-400 border-4 border-navy-900 shadow-lg transform -translate-x-1/2"></div>
+                    <div class="hidden sm:block sm:w-5/12"></div>
+                </div>
+
+                <!-- Hito 6: 2004-2005 -->
+                <div class="timeline-card relative flex flex-col sm:flex-row items-start sm:items-center justify-between" data-category="guatemala">
+                    <div class="hidden sm:block sm:w-5/12"></div>
+                    <div class="absolute left-6 sm:left-1/2 w-5 h-5 rounded-full bg-navy-900 border-4 border-gold-300 shadow-md transform -translate-x-1/2"></div>
+                    <div class="sm:w-5/12 pl-16 sm:pl-10">
+                        <span class="inline-block px-3 py-1 rounded-full bg-navy-900 text-gold-300 font-bold text-xs mb-2">2004 – 2005</span>
+                        <h3 class="font-serif text-xl font-bold text-navy-900">Primeras Promociones de Graduados</h3>
+                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                            Egresan las primeras generaciones de jóvenes guatemaltecos con título de nivel medio y especialización técnica, integrándose inmediatamente al sector productivo o continuando estudios universitarios.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Hito 7: 2015 -->
+                <div class="timeline-card relative flex flex-col sm:flex-row items-start sm:items-center justify-between" data-category="legado">
+                    <div class="sm:w-5/12 sm:text-right pl-16 sm:pl-0 sm:pr-10">
+                        <span class="inline-block px-3 py-1 rounded-full bg-gold-100 text-gold-700 font-bold text-xs mb-2">22 Enero 2015</span>
+                        <h3 class="font-serif text-xl font-bold text-navy-900">Padre Al Declarado Venerable</h3>
+                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                            La Santa Sede promulga el decreto que reconoce las virtudes heroicas del Padre Aloysius Schwartz, otorgándole el título de Venerable ante toda la Iglesia universal.
+                        </p>
+                    </div>
+                    <div class="absolute left-6 sm:left-1/2 w-5 h-5 rounded-full bg-gold-400 border-4 border-white shadow-md transform -translate-x-1/2"></div>
+                    <div class="hidden sm:block sm:w-5/12"></div>
+                </div>
+
+                <!-- Hito 8: Actualidad -->
+                <div class="timeline-card relative flex flex-col sm:flex-row items-start sm:items-center justify-between" data-category="legado">
+                    <div class="hidden sm:block sm:w-5/12"></div>
+                    <div class="absolute left-6 sm:left-1/2 w-5 h-5 rounded-full bg-navy-900 border-4 border-gold-300 shadow-md transform -translate-x-1/2"></div>
+                    <div class="sm:w-5/12 pl-16 sm:pl-10">
+                        <span class="inline-block px-3 py-1 rounded-full bg-navy-900 text-gold-300 font-bold text-xs mb-2">Más de 25 Años de Servicio</span>
+                        <h3 class="font-serif text-xl font-bold text-navy-900">Miles de Familias Transformadas</h3>
+                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                            Hoy, Villa de los Niños Guatemala continúa formando cientos de jóvenes cada año en sus instalaciones de Mixco, consolidándose como un referente nacional de excelencia académica, técnica y humana.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Modelo Educativo Integral -->
+    <section id="modelo" class="py-20 bg-navy-900 text-white reveal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-14 gap-6">
+                <div class="max-w-2xl">
+                    <span class="text-xs font-bold uppercase tracking-[0.2em] text-gold-400">Formación Integral</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-2">
+                        Los Cuatro Pilares de Villa de los Niños
+                    </h2>
+                    <p class="text-slate-300 mt-3 text-base">
+                        Nuestro modelo educativo prepara a los estudiantes para la vida profesional, familiar y ciudadana mediante una formación equilibrada.
+                    </p>
+                </div>
+                <div class="inline-flex items-center gap-2 text-sm text-gold-300 bg-navy-800 px-4 py-2.5 rounded-2xl border border-gold-400/20">
+                    <i data-lucide="shield-check" class="w-5 h-5 text-gold-400"></i>
+                    <span>Avalado por el Ministerio de Educación de Guatemala</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Pilar 1 -->
+                <div class="bg-navy-800/70 border border-gold-400/20 rounded-3xl p-7 hover:border-gold-400/60 transition-all group">
+                    <div class="w-12 h-12 rounded-2xl bg-gold-400/15 text-gold-300 flex items-center justify-center mb-5 group-hover:bg-gold-400 group-hover:text-navy-950 transition-colors">
+                        <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-2">Excelencia Académica</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Educación media completa (Ciclo Básico y Diversificado / Bachillerato) con altos estándares de rendimiento en ciencias, matemáticas, idiomas y tecnología.
+                    </p>
+                </div>
+
+                <!-- Pilar 2 -->
+                <div class="bg-navy-800/70 border border-gold-400/20 rounded-3xl p-7 hover:border-gold-400/60 transition-all group">
+                    <div class="w-12 h-12 rounded-2xl bg-gold-400/15 text-gold-300 flex items-center justify-center mb-5 group-hover:bg-gold-400 group-hover:text-navy-950 transition-colors">
+                        <i data-lucide="wrench" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-2">Talleres Técnicos</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Capacitación vocacional práctica en mecánica automotriz, electricidad industrial, electrónica, soldadura, carpintería, informática y diseño/confección.
+                    </p>
+                </div>
+
+                <!-- Pilar 3 -->
+                <div class="bg-navy-800/70 border border-gold-400/20 rounded-3xl p-7 hover:border-gold-400/60 transition-all group">
+                    <div class="w-12 h-12 rounded-2xl bg-gold-400/15 text-gold-300 flex items-center justify-center mb-5 group-hover:bg-gold-400 group-hover:text-navy-950 transition-colors">
+                        <i data-lucide="home" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-2">Hogar y Bienestar</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Régimen de internado fraterno en "familias" acompañadas por las Hermanas de María, garantizando alimentación nutritiva, salud, vestuario y recreación sana.
+                    </p>
+                </div>
+
+                <!-- Pilar 4 -->
+                <div class="bg-navy-800/70 border border-gold-400/20 rounded-3xl p-7 hover:border-gold-400/60 transition-all group">
+                    <div class="w-12 h-12 rounded-2xl bg-gold-400/15 text-gold-300 flex items-center justify-center mb-5 group-hover:bg-gold-400 group-hover:text-navy-950 transition-colors">
+                        <i data-lucide="sparkles" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-2">Valores y Cultura</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Formación humana, ética y espiritual, complementada con música, bandas escolares, deportes y liderazgo solidario al servicio de Guatemala.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Nota sobre el simbolismo del Emblema -->
+            <div class="mt-14 bg-navy-950/80 border border-gold-400/30 rounded-3xl p-6 sm:p-10 flex flex-col md:flex-row items-center gap-8">
+                <div class="w-28 h-28 sm:w-32 sm:h-32 flex-shrink-0" data-emblem-slot></div>
+                <div class="text-center md:text-left">
+                    <span class="text-xs font-bold uppercase tracking-[0.2em] text-gold-400">Simbolismo Institucional</span>
+                    <h3 class="font-serif text-xl sm:text-2xl font-bold text-white mt-1">Significado de Nuestro Emblema</h3>
+                    <p class="text-slate-300 text-sm sm:text-base mt-2 leading-relaxed">
+                        El sello dorado circular de <strong>Villa de los Niños Guatemala 2000</strong> integra en su centro una figura geométrica estilizada: los brazos abiertos que sostienen y acogen a un niño en un abrazo protector semicircular, simbolizando el hogar, la dignidad humana y el futuro brillante que se construye a través de la educación.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- SECCIÓN HOJA INFORMATIVA / AFICHE OFICIAL (Diseño fiel a image_a93a7f.jpg) -->
+    <section id="hoja-informativa" class="py-16 sm:py-24 bg-gradient-to-b from-ivory-200 to-ivory-100 border-t border-gold-300/60">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Barra de herramientas del Afiche Oficial -->
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8 bg-white p-4 sm:px-6 rounded-2xl shadow-sm border border-gold-200">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-gold-600 block">Documento Conmemorativo</span>
+                    <h2 class="font-serif text-xl sm:text-2xl font-bold text-navy-900">Hoja Informativa Oficial — Villa de los Niños</h2>
+                </div>
+                <div class="flex flex-wrap items-center gap-3">
+                    <label class="cursor-pointer inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-navy-900 hover:bg-navy-800 text-gold-300 text-xs sm:text-sm font-semibold transition-all shadow-sm">
+                        <i data-lucide="upload" class="w-4 h-4"></i>
+                        <span>Cargar mis 3 fotos locales</span>
+                        <input type="file" id="poster-photo-uploader" accept="image/*" multiple class="hidden">
+                    </label>
+                    <button type="button" onclick="window.print()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gold-400 hover:bg-gold-300 text-navy-950 text-xs sm:text-sm font-bold transition-all shadow-gold">
+                        <i data-lucide="printer" class="w-4 h-4"></i>
+                        <span>Imprimir / Guardar PDF</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- HOJA / AFICHE OFICIAL ESTILO EDITORIAL -->
+            <article id="poster-sheet" class="relative bg-ivory-50 rounded-2xl shadow-2xl border-4 border-navy-900 overflow-hidden text-navy-950">
+                <!-- Franjas laterales decorativas estilo bandera de Guatemala (Azul - Blanco - Azul) -->
+                <div class="hidden sm:block absolute left-0 top-48 bottom-24 w-3 bg-gradient-to-b from-sky-600 via-white to-sky-600 opacity-85 pointer-events-none"></div>
+                <div class="hidden sm:block absolute right-0 top-48 bottom-24 w-3 bg-gradient-to-b from-sky-600 via-white to-sky-600 opacity-85 pointer-events-none"></div>
+
+                <!-- 1. ENCABEZADO AZUL MARINO Y DORADO -->
+                <div class="relative bg-navy-900 pt-5 pb-4 px-4 sm:px-8 border-b-4 border-gold-500">
+                    <!-- Cinta dorada superior con título principal -->
+                    <div class="gold-banner-bg rounded-xl py-3 px-4 sm:pl-36 md:pl-44 shadow-md border border-gold-200 flex items-center justify-center md:justify-start">
+                        <h2 class="font-serif text-2xl sm:text-4xl md:text-[2.65rem] font-extrabold tracking-wide text-navy-900 text-center md:text-left leading-none drop-shadow-sm">
+                            VILLA DE LOS NIÑOS
+                        </h2>
+                    </div>
+
+                    <!-- Sello Circular Dorado Superpuesto a la Izquierda -->
+                    <div class="mx-auto md:mx-0 mt-4 md:mt-0 md:absolute md:left-6 md:top-3 w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 z-20 drop-shadow-xl" data-emblem-slot></div>
+                </div>
+
+                <!-- Sub-encabezado Crema con Lema, Firma Caligráfica y Emblema Hermanas de María -->
+                <div class="bg-ivory-50 px-6 sm:px-10 pt-5 pb-6 border-b border-gold-300/70">
+                    <div class="md:pl-36 flex flex-col lg:flex-row items-center justify-between gap-4">
+                        <div class="text-center lg:text-left">
+                            <p class="font-sans font-bold text-base sm:text-lg text-navy-950 leading-snug">
+                                Formando Jóvenes de Éxito<br class="hidden sm:inline"> en Guatemala desde 1998
+                            </p>
+                            <div class="flex items-center justify-center lg:justify-start gap-2 mt-2 text-gold-500">
+                                <span class="h-px w-10 bg-gold-500"></span>
+                                <span class="text-xs">◆ ✦ ◆</span>
+                                <span class="h-px w-10 bg-gold-500"></span>
+                            </div>
+                        </div>
+
+                        <!-- Firma Caligráfica Padre Al + Sello Hermanas de María -->
+                        <div class="flex items-center gap-4">
+                            <div class="text-center">
+                                <span class="font-signature text-3xl sm:text-4xl text-navy-900 block leading-none">Padre Al</span>
+                                <span class="block text-[11px] font-bold text-slate-700 mt-0.5">(Aloysius Schwartz)</span>
+                                <span class="block text-[10px] font-semibold uppercase tracking-wider text-gold-700">Congregación de María</span>
+                            </div>
+
+                            <!-- Emblema Circular Hermanas de María -->
+                            <svg viewBox="0 0 120 120" class="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0" role="img" aria-label="Emblema Hermanas de María">
+                                <defs>
+                                    <path id="sistersTop" d="M 18,60 A 42,42 0 1,1 102,60" />
+                                    <path id="sistersBottom" d="M 14,60 A 46,46 0 0,0 106,60" />
+                                </defs>
+                                <circle cx="60" cy="60" r="56" fill="#FFFFFF" stroke="#0F223D" stroke-width="2.5"/>
+                                <circle cx="60" cy="60" r="35" fill="#EBF4FF" stroke="#1D4ED8" stroke-width="1.5"/>
+                                <text fill="#0F223D" font-size="8.2" font-weight="800" letter-spacing="0.8">
+                                    <textPath href="#sistersTop" startOffset="50%" text-anchor="middle">HERMANAS DE MARÍA</textPath>
+                                </text>
+                                <text fill="#0F223D" font-size="8.2" font-weight="800" letter-spacing="0.8">
+                                    <textPath href="#sistersBottom" startOffset="50%" text-anchor="middle">HERMANAS DE MARÍA</textPath>
+                                </text>
+                                <!-- Silueta estilizada de la Virgen con manto azul -->
+                                <circle cx="60" cy="40" r="6" fill="#FDE68A" stroke="#0F223D" stroke-width="1"/>
+                                <path d="M 45,86 L 52,48 Q 60,43 68,48 L 75,86 Z" fill="#1D4ED8"/>
+                                <path d="M 54,50 L 66,50 L 68,86 L 52,86 Z" fill="#FFFFFF"/>
+                                <line x1="44" y1="62" x2="53" y2="54" stroke="#FDE68A" stroke-width="2.5" stroke-linecap="round"/>
+                                <line x1="76" y1="62" x2="67" y2="54" stroke="#FDE68A" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CUERPO PRINCIPAL DEL AFICHE -->
+                <div class="p-6 sm:p-10 space-y-10">
+
+                    <!-- BLOQUE 1: HISTORIA Y FUNDACIÓN + FOTO 1 (campus-villa.jpg) -->
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                        <div class="md:col-span-6 space-y-4">
+                            <div class="flex items-center gap-2.5">
+                                <div class="ribbon-navy text-gold-300 font-serif font-bold text-base sm:text-lg tracking-wider py-2 pl-4 pr-7 inline-flex items-center gap-2 shadow">
+                                    <span class="text-gold-400">★</span>
+                                    <span>HISTORIA Y FUNDACIÓN</span>
+                                </div>
+                                <span class="text-gold-500 text-xl">★</span>
+                            </div>
+
+                            <p class="text-slate-800 text-sm sm:text-base leading-relaxed font-medium">
+                                Las <strong>Hermanas de María</strong> llegaron a Guatemala en <strong>1998</strong>, inspiradas por el legado de <strong>Monseñor Aloysius Schwartz</strong>, para fundar en el <strong>año 2000</strong> este complejo educativo que brinda educación interna, digna, técnica y gratuita a miles de niños y jóvenes de escasos recursos.
+                            </p>
+                        </div>
+
+                        <div class="md:col-span-6">
+                            <figure class="gold-frame rounded-xl transform md:rotate-1 hover:rotate-0 transition-transform duration-300">
+                                <div class="aspect-[4/3] bg-navy-900 rounded-lg overflow-hidden relative">
+                                    <img data-sync-photo="campus" src="campus-villa.jpg" alt="Nuestra Comunidad - Formación Integral y Disciplina" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="hidden w-full h-full flex-col items-center justify-center p-5 text-center bg-navy-900 text-slate-200">
+                                        <i data-lucide="users" class="w-8 h-8 text-gold-400 mb-2"></i>
+                                        <span class="text-xs font-bold text-gold-300">Foto 1: campus-villa.jpg</span>
+                                        <span class="text-[11px] text-slate-300 mt-1">Usa el botón "Cargar mis 3 fotos locales" para visualizar tu fotografía aquí.</span>
+                                    </div>
+                                </div>
+                                <figcaption class="gold-banner-bg text-navy-950 font-bold text-xs sm:text-sm text-center py-2 px-3 rounded-b-lg mt-1">
+                                    Nuestra Comunidad - Formación Integral y Disciplina
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!-- BLOQUE 2: FOTO 2 (banda-gala.jpg) + ARTÍSTICA Y DISCIPLINA -->
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                        <div class="md:col-span-6 order-2 md:order-1">
+                            <figure class="gold-frame rounded-xl transform md:-rotate-1 hover:rotate-0 transition-transform duration-300">
+                                <div class="aspect-[4/3] bg-navy-900 rounded-lg overflow-hidden relative">
+                                    <img data-sync-photo="banda" src="banda-gala.jpg" alt="Tradición y Orgullo - Banda de Gala de la Villa" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="hidden w-full h-full flex-col items-center justify-center p-5 text-center bg-navy-900 text-slate-200">
+                                        <i data-lucide="music" class="w-8 h-8 text-gold-400 mb-2"></i>
+                                        <span class="text-xs font-bold text-gold-300">Foto 2: banda-gala.jpg</span>
+                                        <span class="text-[11px] text-slate-300 mt-1">Usa el botón "Cargar mis 3 fotos locales" para visualizar tu fotografía aquí.</span>
+                                    </div>
+                                </div>
+                                <figcaption class="gold-banner-bg text-navy-950 font-bold text-xs sm:text-sm text-center py-2 px-3 rounded-b-lg mt-1">
+                                    Tradición y Orgullo - Banda de Gala de la Villa
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="md:col-span-6 order-1 md:order-2 space-y-4">
+                            <div class="flex items-center gap-2.5">
+                                <span class="text-gold-500 text-xl">★</span>
+                                <div class="bg-navy-900 text-gold-300 font-serif font-bold text-base sm:text-lg tracking-wider py-2 px-5 rounded-lg inline-flex items-center gap-2 shadow">
+                                    <span>ARTÍSTICA Y DISCIPLINA</span>
+                                    <span class="text-gold-400">★</span>
+                                </div>
+                            </div>
+
+                            <p class="text-slate-800 text-sm sm:text-base leading-relaxed font-medium">
+                                La <strong>Banda Escolar y Banda de Gala de la Villa</strong> fomenta el civismo, la disciplina, el desarrollo del talento artístico, la música y el trabajo en equipo, representando con orgullo a nuestra institución en todo el país.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- BLOQUE 3 INFERIOR: LOGROS + NUESTRO LEMA | CENEFA | FOTO 3 (equipo-baloncesto.jpg) -->
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch pt-2">
+                        <!-- Columna Izquierda: LOGROS y NUESTRO LEMA -->
+                        <div class="md:col-span-5 flex flex-col justify-between space-y-6">
+                            <!-- Sub-bloque LOGROS -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <div class="ribbon-navy text-gold-300 font-serif font-bold text-base sm:text-lg tracking-wider py-1.5 pl-4 pr-7 inline-flex items-center gap-2 shadow">
+                                        <span class="text-gold-400">★</span>
+                                        <span>LOGROS</span>
+                                    </div>
+                                    <span class="text-gold-500 text-sm tracking-widest">★ ★ ★ ★</span>
+                                </div>
+
+                                <ul class="space-y-2.5 pl-1">
+                                    <li class="flex items-baseline gap-3">
+                                        <span class="font-serif font-extrabold text-xl sm:text-2xl text-navy-900">3,689</span>
+                                        <span class="text-sm sm:text-base font-semibold text-slate-800">Miles de graduados</span>
+                                    </li>
+                                    <li class="flex items-baseline gap-3">
+                                        <span class="font-serif font-extrabold text-xl sm:text-2xl text-navy-900">2,743</span>
+                                        <span class="text-sm sm:text-base font-semibold text-slate-800">Educación técnica de calidad</span>
+                                    </li>
+                                    <li class="flex items-baseline gap-3">
+                                        <span class="font-serif font-extrabold text-xl sm:text-2xl text-navy-900">1,500</span>
+                                        <span class="text-sm sm:text-base font-semibold text-slate-800">Formación espiritual y deportiva</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Sub-bloque NUESTRO LEMA -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <div class="ribbon-navy text-gold-300 font-serif font-bold text-base sm:text-lg tracking-wider py-1.5 pl-4 pr-7 inline-flex items-center gap-2 shadow">
+                                        <span class="text-gold-400">★</span>
+                                        <span>NUESTRO LEMA</span>
+                                    </div>
+                                    <span class="text-gold-500 text-sm tracking-widest">★ ★</span>
+                                </div>
+
+                                <div class="pl-1">
+                                    <p class="font-serif font-extrabold text-base sm:text-lg text-navy-950">
+                                        ¡Fervor, Disciplina y Superación!
+                                    </p>
+                                    <p class="text-sm text-slate-700 font-medium mt-1 leading-relaxed">
+                                        Formando jóvenes con valores, fe y trabajo para transformar su futuro.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cenefa Geométrica Central Azul y Dorada -->
+                        <div class="hidden md:flex md:col-span-1 justify-center">
+                            <div class="w-5 h-full rounded-full mayan-pattern border-2 border-gold-500 shadow-inner"></div>
+                        </div>
+
+                        <!-- Columna Derecha: FOTO 3 (equipo-baloncesto.jpg) -->
+                        <div class="md:col-span-6 flex items-center">
+                            <figure class="gold-frame rounded-xl w-full transform md:rotate-1 hover:rotate-0 transition-transform duration-300">
+                                <div class="aspect-[4/4] bg-navy-900 rounded-lg overflow-hidden relative">
+                                    <img data-sync-photo="deporte" src="equipo-baloncesto.jpg" alt="Deporte, Valores y Fe" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="hidden w-full h-full flex-col items-center justify-center p-5 text-center bg-navy-900 text-slate-200">
+                                        <i data-lucide="trophy" class="w-8 h-8 text-gold-400 mb-2"></i>
+                                        <span class="text-xs font-bold text-gold-300">Foto 3: equipo-baloncesto.jpg</span>
+                                        <span class="text-[11px] text-slate-300 mt-1">Usa el botón "Cargar mis 3 fotos locales" para visualizar tu fotografía aquí.</span>
+                                    </div>
+                                </div>
+                                <figcaption class="gold-banner-bg text-navy-950 font-bold text-xs sm:text-sm text-center py-2 px-3 rounded-b-lg mt-1">
+                                    Deporte, Valores y Fe
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PIE DEL AFICHE CON SELLO DORADO INFERIOR -->
+                <div class="relative bg-navy-900 h-16 mt-6 border-t-4 border-gold-500 flex items-center justify-center">
+                    <div class="w-24 h-24 -mt-10 drop-shadow-xl" data-emblem-slot></div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Pie de Página Institucional -->
+    <footer class="bg-navy-950 text-slate-300 border-t border-gold-400/20 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+                <!-- Columna Logo y Descripción -->
+                <div class="md:col-span-5 space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 flex-shrink-0" data-emblem-slot></div>
+                        <div>
+                            <h4 class="font-serif text-xl font-bold text-gold-200">Villa de los Niños</h4>
+                            <p class="text-xs uppercase tracking-[0.2em] text-gold-400">Guatemala • Fundada en el 2000</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed max-w-md">
+                        Institución educativa sin fines de lucro dirigida por las <strong>Hermanas de María</strong>, siguiendo el carisma del Venerable Padre Aloysius Schwartz para erradicar la pobreza mediante la educación integral gratuita.
+                    </p>
+                </div>
+
+                <!-- Enlaces Rápidos -->
+                <div class="md:col-span-3 space-y-3">
+                    <h5 class="text-sm font-bold uppercase tracking-wider text-gold-300">Secciones</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#inicio" class="hover:text-gold-300 transition-colors">Inicio</a></li>
+                        <li><a href="#hoja-informativa" class="hover:text-gold-300 transition-colors">Hoja Informativa Oficial</a></li>
+                        <li><a href="#fundador" class="hover:text-gold-300 transition-colors">Venerable Padre Aloysius Schwartz</a></li>
+                        <li><a href="#guatemala" class="hover:text-gold-300 transition-colors">Fundación en Guatemala (2000)</a></li>
+                        <li><a href="#historia" class="hover:text-gold-300 transition-colors">Línea del Tiempo</a></li>
+                        <li><a href="#modelo" class="hover:text-gold-300 transition-colors">Modelo Educativo</a></li>
+                    </ul>
+                </div>
+
+                <!-- Ubicación y Datos Institucionales -->
+                <div class="md:col-span-4 space-y-3">
+                    <h5 class="text-sm font-bold uppercase tracking-wider text-gold-300">Sede en Guatemala</h5>
+                    <div class="space-y-2.5 text-sm text-slate-400">
+                        <p class="flex items-start gap-2.5">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-gold-400 flex-shrink-0 mt-1"></i>
+                            <span>Aldea El Aguacate, Zona 10 de Mixco, Carretera hacia San Juan Sacatepéquez, Guatemala.</span>
+                        </p>
+                        <p class="flex items-start gap-2.5">
+                            <i data-lucide="globe" class="w-4 h-4 text-gold-400 flex-shrink-0 mt-1"></i>
+                            <span>Red Internacional: World Villages for Children (Corea, Filipinas, México, Guatemala, Brasil, Honduras y Tanzania).</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+                <p>© Villa de los Niños Guatemala • Obra de las Hermanas de María. Todos los derechos reservados.</p>
+                <p class="text-gold-400/80 font-medium">"Al servicio de los más pobres entre los pobres"</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Visor de Imagen Ampliada (Lightbox) -->
+    <div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-navy-950/90 backdrop-blur-md flex items-center justify-center p-4" onclick="closeLightbox()">
+        <div class="relative max-w-4xl w-full flex flex-col items-center" onclick="event.stopPropagation()">
+            <button type="button" onclick="closeLightbox()" class="self-end mb-3 px-4 py-2 rounded-full bg-navy-800 text-gold-300 hover:bg-gold-400 hover:text-navy-950 text-xs font-bold flex items-center gap-1.5 transition">
+                <i data-lucide="x" class="w-4 h-4"></i>
+                <span>Cerrar</span>
+            </button>
+            <img id="lightboxImage" src="" alt="Vista ampliada" class="max-h-[80vh] w-auto rounded-2xl border border-gold-400/40 shadow-2xl object-contain" />
+            <p id="lightboxCaption" class="mt-3 text-sm text-gold-200 font-medium text-center"></p>
+        </div>
+    </div>
+
+    <!-- Lógica Interactiva en JavaScript -->
+    <script>
+        // Funciones globales para visor ampliado de fotografías
+        function openLightbox(imgEl) {
+            if (!imgEl || imgEl.style.display === 'none') return;
+            const modal = document.getElementById('lightboxModal');
+            const modalImg = document.getElementById('lightboxImage');
+            const modalCaption = document.getElementById('lightboxCaption');
+            modalImg.src = imgEl.src;
+            modalCaption.textContent = imgEl.alt || 'Villa de los Niños Guatemala';
+            modal.classList.remove('hidden');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightboxModal').classList.add('hidden');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Inyectar el Emblema Oficial SVG de alta resolución en todos los espacios designados
+            const template = document.getElementById('official-emblem-template');
+            const slots = document.querySelectorAll('[data-emblem-slot]');
+            slots.forEach(slot => {
+                const clone = template.content.cloneNode(true);
+                slot.appendChild(clone);
+            });
+
+            // 2. Inicializar iconos de Lucide
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+
+            // 3. Carga interactiva de las 3 fotografías locales del usuario
+            const uploader = document.getElementById('photoUploader');
+            const photoTargets = [
+                document.getElementById('img-campus'),
+                document.getElementById('img-banda'),
+                document.getElementById('img-deporte')
+            ];
+
+            if (uploader) {
+                uploader.addEventListener('change', (e) => {
+                    const files = Array.from(e.target.files).slice(0, 3);
+                    files.forEach((file, idx) => {
+                        if (photoTargets[idx]) {
+                            const url = URL.createObjectURL(file);
+                            photoTargets[idx].src = url;
+                            photoTargets[idx].style.display = 'block';
+                            if (photoTargets[idx].nextElementSibling) {
+                                photoTargets[idx].nextElementSibling.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            }
+
+            // 4. Menú móvil desplegable
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Cerrar menú móvil al hacer clic en un enlace
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // 5. Filtro interactivo de la Línea del Tiempo
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const timelineCards = document.querySelectorAll('.timeline-card');
+
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Actualizar estado visual de los botones
+                    filterButtons.forEach(b => {
+                        b.classList.remove('active', 'bg-navy-900', 'text-gold-300');
+                        b.classList.add('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+                    });
+                    btn.classList.add('active', 'bg-navy-900', 'text-gold-300');
+                    btn.classList.remove('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+
+                    const selectedFilter = btn.getAttribute('data-filter');
+
+                    timelineCards.forEach(card => {
+                        const category = card.getAttribute('data-category');
+                        if (selectedFilter === 'all' || category === selectedFilter) {
+                            card.style.display = '';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // 6. Animación suave de aparición al hacer scroll (Intersection Observer)
+            const revealElements = document.querySelectorAll('.reveal');
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+
+            revealElements.forEach(el => revealObserver.observe(el));
+
+            // 7. Animación numérica de los contadores de impacto
+            const counters = document.querySelectorAll('.counter');
+            const counterObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = parseInt(entry.target.getAttribute('data-target'), 10);
+                        const duration = 1400;
+                        const startTime = performance.now();
+                        const startVal = target > 100 ? target - 40 : 0;
+
+                        function updateCounter(currentTime) {
+                            const elapsed = currentTime - startTime;
+                            const progress = Math.min(elapsed / duration, 1);
+                            // Ease-out cubic
+                            const eased = 1 - Math.pow(1 - progress, 3);
+                            const currentVal = Math.floor(startVal + (target - startVal) * eased);
+                            entry.target.textContent = currentVal;
+
+                            if (progress < 1) {
+                                requestAnimationFrame(updateCounter);
+                            } else {
+                                entry.target.textContent = target;
+                            }
+                        }
+
+                        requestAnimationFrame(updateCounter);
+                        counterObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            counters.forEach(counter => counterObserver.observe(counter));
+
+            // 7. Selector de Vista (Vista Unificada / Web Institucional / Hoja Oficial)
+            const viewModeButtons = document.querySelectorAll('.view-mode-btn');
+            const webView = document.getElementById('institutional-web-view');
+            const posterSection = document.getElementById('hoja-informativa');
+
+            function setViewMode(mode) {
+                viewModeButtons.forEach(btn => {
+                    const isMatch = btn.getAttribute('data-view-mode') === mode;
+                    if (isMatch) {
+                        btn.classList.add('active', 'bg-gold-400', 'text-navy-950');
+                        btn.classList.remove('text-slate-300');
+                    } else {
+                        btn.classList.remove('active', 'bg-gold-400', 'text-navy-950');
+                        btn.classList.add('text-slate-300');
+                    }
+                });
+
+                if (mode === 'all') {
+                    webView.style.display = '';
+                    posterSection.style.display = '';
+                } else if (mode === 'web') {
+                    webView.style.display = '';
+                    posterSection.style.display = 'none';
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else if (mode === 'poster') {
+                    webView.style.display = 'none';
+                    posterSection.style.display = '';
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            }
+
+            viewModeButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    setViewMode(btn.getAttribute('data-view-mode'));
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // 8. Carga sincronizada de las 3 fotografías locales en toda la página
+            const photoInputs = [
+                document.getElementById('global-photo-uploader'),
+                document.getElementById('mobile-photo-uploader'),
+                document.getElementById('poster-photo-uploader')
+            ].filter(Boolean);
+
+            const photoGroups = [
+                document.querySelectorAll('[data-sync-photo="campus"]'),
+                document.querySelectorAll('[data-sync-photo="banda"]'),
+                document.querySelectorAll('[data-sync-photo="deporte"]')
+            ];
+
+            function handlePhotoUpload(filesList) {
+                const files = Array.from(filesList).slice(0, 3);
+                files.forEach((file, index) => {
+                    const objectUrl = URL.createObjectURL(file);
+                    const targets = photoGroups[index];
+                    if (targets) {
+                        targets.forEach(img => {
+                            img.src = objectUrl;
+                            img.style.display = 'block';
+                            if (img.nextElementSibling) {
+                                img.nextElementSibling.style.display = 'none';
+                            }
+                        });
+                    }
+                });
+            }
+
+            photoInputs.forEach(input => {
+                input.addEventListener('change', (e) => {
+                    if (e.target.files && e.target.files.length > 0) {
+                        handlePhotoUpload(e.target.files);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
